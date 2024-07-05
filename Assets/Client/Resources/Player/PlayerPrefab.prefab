@@ -74,12 +74,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4111819248598986}
   - component: {fileID: 95389170962898660}
+  - component: {fileID: 8522801359003713722}
   - component: {fileID: 618214623447407227}
   - component: {fileID: 4884070294944565789}
   - component: {fileID: 803782570281008360}
+  - component: {fileID: 3203631054890313652}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +125,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &8522801359003713722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045401375514670}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!143 &618214623447407227
 CharacterController:
   m_ObjectHideFlags: 0
@@ -177,6 +200,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 618214623447407227}
   animator: {fileID: 95389170962898660}
+--- !u!114 &3203631054890313652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045401375514670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344a804b75f49d9976e162bb3966866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCoins: 100
 --- !u!1 &1063867024875804
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,5 @@ namespace Client.Scripts.Infrustructure
         {
             InputService = new InputService();
         }
-
     }
 }
