@@ -10,6 +10,7 @@ namespace Client.Scripts.Coins
             {
                 playerCoins.RemoveCoins(coinsPerSecond);
                 Statistic.Instance.AddTotalCoins(coinsPerSecond);
+                PlayEffect();
             }
         }
     }

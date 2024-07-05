@@ -1,10 +1,8 @@
 ﻿namespace Client.Scripts
 {
-    public enum AnimatorState
+    public enum EffectName
     {
-        Unknown,
-        Idle,
-        Walking,
+        AddCoins,
+        PayCoins,
     }
-
 }

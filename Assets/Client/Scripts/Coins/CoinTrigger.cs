@@ -1,5 +1,3 @@
-using Client.Scripts.Infrustructure;
-
 namespace Client.Scripts.Coins
 {
     public class CoinTrigger : CoinTriggerBase
@@ -7,6 +5,7 @@ namespace Client.Scripts.Coins
         protected override void ProcessCoins()
         {
             playerCoins.AddCoins(coinsPerSecond);
+            PlayEffect();
         }
     }
 }
