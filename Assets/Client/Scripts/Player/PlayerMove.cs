@@ -21,6 +21,7 @@ namespace Client.Scripts.Player
         private void Start()
         {
             mainCamera = Camera.main;
+            mainCamera.GetComponent<CameraFollow>().Follow(gameObject);
         }
 
         private void Update()
